@@ -1,5 +1,4 @@
 
-console.log("running code on server");
 
 Meteor.startup(function () {
   console.log("server startup");

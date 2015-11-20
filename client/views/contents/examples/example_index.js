@@ -1,13 +1,11 @@
 
 Template.example_index.events({
     "change label.btn": function (event) {
-      console.log("selection chagned");
       Session.set("selected",event.target.id);
     }
  });
 
 Template.example_index.onRendered(function () {
-  console.log("doing render");
    $('[data-toggle="popover"]').popover();
    Session.set("selected","5647fdf259ac96898c68b830");
 });
@@ -22,8 +20,6 @@ var callback = function(error,response){
 Template.editor.helpers({
     configAce: function () {
       return function(editor) {
-        console.log("doing ace config");
-        Edtr = editor;
         editor.getSession().setMode('ace/mode/javascript');
         editor.setShowPrintMargin(false);
         editor.getSession().setUseWrapMode(true);
@@ -37,11 +33,9 @@ Template.editor.helpers({
     },
 
     connectAce :function(){
-      console.log("connecting ace");
     },
 
     editor: function(){
-      console.log("retrun new crawler");
       crawler = Crawlers.findOne(new Meteor.Collection.ObjectID(Session.get("selected")));
       return crawler;
     },
@@ -60,8 +54,6 @@ Template.editor.helpers({
 
   Template.run.events({
     "click #run": function (event) {
-      console.log("button clicked - should save first:");
-      console.dir(crawler);
       Meteor.call("updateCrawler",crawler);
     }
  });
