@@ -1,0 +1,101 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif /*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
+  background: #fcfcfc url(/imgs/bg.jpg) repeat;
+  margin: 0px;
+  /* Margin bottom by footer height */
+  margin-bottom: 70px;
+  padding: 0px;
+  color: #555555;
+  min-width: 320px;
+}
+
+.navbar {
+    background-color: rgba(250,250,250,0.95);
+}
+
+#content {
+  padding-top: 70px;
+}
+
+#accordion .panel-heading {
+    cursor: pointer;
+}
+
+h3.panel-title{
+  color: rgb(51, 122, 183) !important;
+}
+
+a[data-toggle] span{
+   border-bottom: 1px dashed #ccc;
+}
+
+#editor{
+  width:100%;
+  height:300px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  height: 70px;
+}
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+  .grid {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  /* Add `.col` for the table cells, or columns */
+  .col {
+    display: table-cell;
+  }
+
+  /* Set the widths */
+  .col-1 { width: 8.333333%; }
+  .col-2 { width: 16.666667%; }
+  .col-3 { width: 25%; }
+  .col-4 { width: 33.333333%; }
+  .col-5 { width: 41.666667%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.333333%; }
+  .col-8 { width: 66.666667%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.333333%; }
+  .col-11 { width: 91.666667%; }
+  .col-12 { width: 100%; }
+
+  /* Padded columns */
+  .grid-padded {
+    margin-left:  -1rem;
+    margin-right: -1rem;
+  }
+  .grid-padded .grid {
+    border-spacing: 1rem 0;
+  }
+  
+
+
+/*
+ * Vertically center grid content
+ *
+ * Requires content within the column to be inline or inline-block.
+ */
+
+.grid-align-middle .col {
+  vertical-align: middle;
+}

@@ -1,0 +1,46 @@
+<template name="run">
+	
+	<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingConsole"
+            data-toggle="collapse" data-parent="#accordion" href="#collapseConsole" aria-expanded="false" aria-controls="collapseConsole">
+            <h3 class="panel-title">Run console</h3>
+            </div>
+            <div id="collapseConsole" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingConsole">
+                <div class="panel-body">
+                    
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" 
+                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;width: 40%">
+                            40%
+                        </div>
+                    </div>
+                    
+                    <button type="button" class="btn btn-success" id="run">
+                        <span class="glyphicon glyphicon-play"></span> Run
+                    </button>
+                    
+                    <div class="form-horizontal" style="margin-top:20px">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#results" aria-controls="results" role="tab" data-toggle="tab">Results</a></li>
+                            <li role="presentation">
+                                <a href="#logs" aria-controls="logs" role="tab" data-toggle="tab">Logs</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="results">
+                                Results
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="logs">
+                                logs
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+	
+	
+</template>	

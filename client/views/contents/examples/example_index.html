@@ -1,0 +1,26 @@
+<template name="example_index">
+	
+	<div class="form-horizontal text-center" style="margin-top:3%;">
+        <h2 style="font-size: 30px;" id="exampleCrawlers">Example crawlers</h2>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <div class="text-center" data-toggle="buttons" style="margin-top: 10px; margin-bottom:18px;">
+                        <label class="btn btn-default active" style="margin-top:4px;">
+                            <input type="radio" name="demo" id="5647fdf259ac96898c68b830" autocomplete="off" checked> Hacker News
+                        </label>
+                    
+                        <label class="btn btn-default" style="margin-top:4px;">
+                            <input type="radio" name="demo" id="56481267b0c71e756317e285" autocomplete="off"> Product Hunt
+                        </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        {{>editor}}
+        {{>run}}
+    </div>
+	
+	
+</template>	
